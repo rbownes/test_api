@@ -14,6 +14,9 @@ operators = {
     "Division": "/",
 }
 
+@app.get("/")
+def happy_func():
+    return "Happy!"
 
 @app.get("/{arithmatic}")
 def read_root(arithmatic: str):
